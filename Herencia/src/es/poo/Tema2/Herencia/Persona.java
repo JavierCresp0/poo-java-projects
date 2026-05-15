@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Clase que encapsula la información de las personas
- * @author demaal
+ * @author Javier Crespo Berland
  *
  */
 public class Persona {
@@ -16,7 +16,7 @@ public class Persona {
 	private String apellidos;
 	private Date fechaNacimiento;
 	
-	//Contructores
+	//Constructores
 	
 	//Getters y setters
 	public void setNif(String nif)
@@ -35,9 +35,9 @@ public class Persona {
 	{
 		//Scanner.class..
 		
-		nif = "Mjssjshsd";
-		nombre = "sdfsdfsdf";
-		apellidos = "sdsfsfsf";
+		nif = "12345678X";
+		nombre = "Juan";
+		apellidos = "García López";
 		fechaNacimiento = new Date ();
 	}
 	

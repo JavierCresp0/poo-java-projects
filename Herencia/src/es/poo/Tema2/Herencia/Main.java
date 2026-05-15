@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 	
 		Alumno alu = new Alumno();
-		alu.setNif("fsdfsdfsdfds");
+		alu.setNif("12345678X");
 		
 		//Así por cada clase de persona.
 		
@@ -15,7 +15,7 @@ public class Main {
 		
 		Persona pers = new Alumno();
 		//Alumno alu2 = new Persona(); //Está mal y no compila
-		//estblecer atributos
+		//establecer atributos
 		
 		
 		

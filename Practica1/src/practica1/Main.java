@@ -34,8 +34,8 @@ public class Main {
 	private static final String OPCION = "  Opcion ";
 	private static final String PRI_OP = "1 - Primera Opcion";
 	private static final String SEG_OP = "2 - Segunda Opcion";
-	private static final String ENTER1 = "Ha elegido la primera opcion  precione ENTER para continuar";
-	private static final String ENTER2 = "Ha elegido la segunda opcion  precione ENTER para continuar";
+	private static final String ENTER1 = "Ha elegido la primera opcion  presione ENTER para continuar";
+	private static final String ENTER2 = "Ha elegido la segunda opcion  presione ENTER para continuar";
 	private static final String ENT_INV = "Entrada no válida. Por favor, ingrese un número entero.";
 	private static final String FECHA = "dd/MM/yyyy";
 	private static final String FECHA2 = "%02d/%02d/%04d";
@@ -62,7 +62,7 @@ public class Main {
 	}
 
 	/**
-	 * Pide los datos del usaurio
+	 * Pide los datos del usuario
 	 */
 	private static void pedirDatos(Persona per) {
 		System.out.println(PEDIR_FECHA);
@@ -98,7 +98,7 @@ public class Main {
 		// enlaza el prestamo con la persona
 		pres.setSolicitante(per);
 
-		// Le pide al utilizador elegir entre prestamo PERSONAL o prestamo HIPOTECARIO
+		// Le pide al usuario elegir entre prestamo PERSONAL o prestamo HIPOTECARIO
 		int opcion;
 
 		do {
@@ -136,7 +136,7 @@ public class Main {
 
 	/**
 	 * Verifica si despues del plazo la persona no tendra mas de 75 años. Verifica
-	 * si el los valores del Prestamo son correctos. Y verifica que la cuato sea
+	 * si el los valores del Prestamo son correctos. Y verifica que la cuanto sea
 	 * superior al 40% del salario mensual
 	 */
 	private static void verificar(Prestamo pres) {
@@ -164,7 +164,7 @@ public class Main {
 	}
 
 	/**
-	 * Le pide al utilizador que elija la manera para presentar los datos por pantalla
+	 * Le pide al usuario que elija la manera para presentar los datos por pantalla
 	 */
 	private static void pedirInforme(Prestamo pres) {
 
@@ -192,7 +192,7 @@ public class Main {
 	}
 
 	/**
-	 * Imprime por patalla los tipos de prestamos a elegir y lo guarda	 * 
+	 * Imprime por pantalla los tipos de prestamos a elegir y lo guarda	 * 
 	 * @param pres El prestamo que solicita
 	 * @param p El tipo de prestamo que eligio
 	 */
@@ -229,7 +229,7 @@ public class Main {
 	}
 
 	/**
-	 * Metodo para pintar por pantalla una cadena y obtener un input del usaurio
+	 * Metodo para pintar por pantalla una cadena y obtener un input del usuario
 	 * 
 	 * @param cadena Texto a mostrar por pantalla
 	 * @return El resultado de texto introducido por el usuario

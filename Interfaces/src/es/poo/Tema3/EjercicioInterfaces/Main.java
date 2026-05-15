@@ -6,13 +6,13 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		EquipoFutbol rm = new EquipoFutbol();
-		EquipoFutbol barsaCaca = new EquipoFutbol();
+		EquipoFutbol barcelona = new EquipoFutbol();
 		
 		
-		rm.compareTo(barsaCaca);	
+		rm.compareTo(barcelona);	
 		
 		
-		comparar(rm,barsaCaca);
+		comparar(rm,barcelona);
 	}
 	
 	public static void comparar(Comparable c1, Comparable c2)

@@ -44,7 +44,7 @@ public class Main {
 	private static final String LETRA_AV = "AV";
 	private static final String LINEA = "Indique la línea del pedido:";
 	private static final String NO_VALID = "Opción no válida. Por favor elija una opcion valida";
-	private static final String ELEJIDO = "Ha elejido la opcion ";
+	private static final String ELEGIDO = "Ha elegido la opcion ";
 	private static final String CUANTO = "Cuantas unidades desea";
 	private static final String NUMERO_PED = "numero de pedidos realizado: ";
 	private static final String DESEA_MAS = "¿Desea agregar otro producto? (S/N):";
@@ -104,12 +104,12 @@ public class Main {
 	private static final String REALIZAR = "(R) Realizar pedido";
 	private static final String DESCARTAR = "(D) Descartar pedido";
 	private static final String LETRA_RDV = "RDV";
-	private static final String FIN = "PEDIDO REALIZADO CORRECTAMENTE, ESPERAMOS VERLE PRONTO EN NUESTRA TIENDA ☺";
+	private static final String FIN = "PEDIDO REALIZADO CORRECTAMENTE, ESPERAMOS VERLE PRONTO EN NUESTRA TIENDA";
 	private static final String FIN2 = "PEDIDO DESCARTADO CORRECTAMENTE";
 	private static final String DIME_CORREO2 = "Dime tu correo";
 	private static final String DIME_NOMBRE = "Dime tu nombre";
 	private static final String DIME_AP = "Dime tus apellidos";
-	private static final String DIME_FEHCA = "A continuacion dime tu fecha de nacimiento";
+	private static final String DIME_FECHA = "A continuacion dime tu fecha de nacimiento";
 	private static final String DIME_DIA = "Dime el dia";
 	private static final String DIME_MES = "Dime el mes";
 	private static final String DIME_ANO = "Dime el año";
@@ -118,7 +118,7 @@ public class Main {
 	private static final String DIME_CON = "Dime la contraseña";
 	private static final String CRED_VA = "Credenciales válidas. Acceso permitido.";
 	private static final String CRED_INV = "Contraseña incorrecta. Acceso denegado.";
-	private static final String INTENTA = "(R) Intertar de nuevo";
+	private static final String INTENTA = "(R) Insertar de nuevo";
 	private static final String LETRA_RV = "RV";
 
 	public static void main(String[] args) {
@@ -230,7 +230,7 @@ public class Main {
 
 		switch (letra) {
 		case 'A':
-			// Muestra los prodcutos de tipo ProductoAlimentario
+			// Muestra los productos de tipo ProductoAlimentario
 			ProductoAlimentario productoA = new ProductoAlimentario();
 			System.out.println(DATOS_A);
 			for (int i = CERO; i < productoA.obtenerElementos().size(); i++) {
@@ -242,7 +242,7 @@ public class Main {
 
 			break;
 		case 'L':
-			// Muestra los prodcutos de tipo ProductoLibro
+			// Muestra los productos de tipo ProductoLibro
 			ProductoLibro productoL = new ProductoLibro();
 			System.out.println(DATOS_L);
 			for (int i = CERO; i < productoL.obtenerElementos().size(); i++) {
@@ -252,7 +252,7 @@ public class Main {
 			acciones(cliente, pedido, productoL);
 			break;
 		case 'D':
-			// Muestra los prodcutos de tipo ProductoDisco
+			// Muestra los productos de tipo ProductoDisco
 			ProductoDisco productoD = new ProductoDisco();
 			System.out.println(DATOS_D);
 			for (int i = CERO; i < productoD.obtenerElementos().size(); i++) {
@@ -304,7 +304,7 @@ public class Main {
 
 				LineaPedido linea = new LineaPedido();
 				linea.setProducto(producto.obtenerElementos().get(opcion - UNO));
-				System.out.println(ELEJIDO + opcion);
+				System.out.println(ELEGIDO + opcion);
 				linea.setCantidad(Utilidades.obtenerEntero(CUANTO));
 				pedido.lp.add(linea);
 				System.out.println(NUMERO_PED + pedido.lp.size());
@@ -552,7 +552,7 @@ public class Main {
 		mp.setMes(ano2, mes2);
 		mp.setAno(ano2, mes2);
 
-		// validr cvc
+		// validar cvc
 		do {
 			cvc = Utilidades.imprimir(INTRO_CVC);
 			if (!TarjetaCredito.validarCVC(cvc)) {
@@ -640,7 +640,7 @@ public class Main {
 		System.out.println(GASTO_ENV + pedido.getFe().getCoste() + EURO);
 		System.out.println(TOT + total + EURO);
 		System.out.println(BARRAS);
-		fianl(cliente, pedido);
+		finalizar(cliente, pedido);
 
 	}
 
@@ -652,7 +652,7 @@ public class Main {
 	 *                la compra.
 	 * @param pedido  Objeto Pedido que contiene la información de la compra.
 	 */
-	private static void fianl(ClienteRegistrado cliente, Pedido pedido) {
+	private static void finalizar(ClienteRegistrado cliente, Pedido pedido) {
 		System.out.println(PASS4);
 		System.out.println(REALIZAR);
 		System.out.println(DESCARTAR);
@@ -700,7 +700,7 @@ public class Main {
 		c.setNombre(Utilidades.imprimir(DIME_NOMBRE));
 		c.setApellidos(Utilidades.imprimir(DIME_AP));
 
-		System.out.println(DIME_FEHCA);
+		System.out.println(DIME_FECHA);
 
 		int dia, mes, ano;
 

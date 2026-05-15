@@ -8,7 +8,7 @@ public class Prestamo {
 
 	/* Constantes */
 	private static final String FECHA = "dd/MM/yyyy";
-	private static final String DATOS_INCO = "Los datos que ingresaste son incorrectos, por favor intentelo de nuevo";
+	private static final String DATOS_INCO = "Los datos que ingresaste son incorrectos, por favor inténtelo de nuevo";
 	private static final String EDAD_SUP = "Lamentamos comunicarle que la fecha de amortización del último pago supera la edad "
 			+ "máxima de 75 años y no podemos concederle el préstamo, disculpe las molestias.";
 	private static final String FECHA1 = "fecha:";
@@ -40,7 +40,7 @@ public class Prestamo {
 	private static final double CERO9 = 0.9;
 	private static final double CERO95 = 0.95;
 
-	/* Atreibutos */
+	/* Atributos */
 	private Persona solicitante;
 	private String fechaSoli;
 	private int importeSoli;
@@ -202,7 +202,7 @@ public class Prestamo {
 	}
 
 	/**
-	 * Calcula el Tipo de interes real amplicando los descuentos
+	 * Calcula el Tipo de interes real aplicando los descuentos
 	 */
 	private void interesReal() {
 		tipoInteres = tp.getTipo();
@@ -315,7 +315,7 @@ public class Prestamo {
 
 		for (int i = CERO; i < cuotas.size(); i++) {
 
-			cadena = cadena + "Couta:" + cuotas.get(i).obtenerTexto();
+			cadena = cadena + "Cuota:" + cuotas.get(i).obtenerTexto();
 
 		}
 

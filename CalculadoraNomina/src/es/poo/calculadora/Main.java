@@ -48,7 +48,7 @@ public class Main {
 	}
 	
 	/**
-	 * Metodo para hacer los calculos de la n�mina
+	 * Metodo para hacer los calculos de la nómina
 	 */
 	public static void hacerCalculos()
 	{

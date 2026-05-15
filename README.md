@@ -8,7 +8,7 @@ Conjunto de prácticas y ejercicios de la asignatura **Programación Orientada a
 |---------|-------------|
 | `CalculadoraNomina/` | Aplicación de cálculo de nóminas que pone en práctica clases, encapsulamiento y métodos. |
 | `Practica1/` | Primera práctica: fundamentos de POO — clases, objetos y atributos. |
-| `Practica2/` | Segunda práctica: herencia, polimorfismo y composición. |
+| `Practica2/` | Tienda virtual completa con gestión de productos, pedidos, clientes registrados y pagos con tarjeta. Aplica herencia, polimorfismo y composición. |
 | `Herencia/` | Ejercicios del Tema 2 — Herencia entre clases. |
 | `Interfaces/` | Ejercicios del Tema 3 — Implementación de interfaces. |
 

@@ -1,2 +1,2 @@
-module xdd {
+module practica1 {
 }

@@ -16,11 +16,11 @@ public class ClienteRegistrado extends Cliente implements IMostrable {
 	private static final String JOSE = "Jose";
 	private static final String MIGUEL = "Miguel";
 	private static final String LEO = "Leo";
-	private static final String JUAN_CORREO = "juan.gmail.com";
-	private static final String PEDRO_CORREO = "predro.gmail.com";
-	private static final String JOSE_CORREO = "jose.gmail.com";
-	private static final String MIGUEL_CORREO = "miguel.gmail.com";
-	private static final String LEO_CORREO = "leo.gmail.com";
+	private static final String JUAN_CORREO = "juan@gmail.com";
+	private static final String PEDRO_CORREO = "pedro@gmail.com";
+	private static final String JOSE_CORREO = "jose@gmail.com";
+	private static final String MIGUEL_CORREO = "miguel@gmail.com";
+	private static final String LEO_CORREO = "leo@gmail.com";
 	private static final int ANO = 2000;
 	private static final int UNO = 1;
 
